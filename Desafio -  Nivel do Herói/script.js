@@ -1,5 +1,5 @@
 // Define o herói como um array com nome, XP, vida e ataque
-const heroi = ["Vingador das Sobras", 5600, 100, 120];
+const heroi = ["Vingador das Sombras", 5600, 100, 120];
 
 // Salva os atributos do herói em variáveis separadas
 let xpHeroi = heroi[1];
@@ -37,8 +37,9 @@ for (let i = 0; i < numeroDeAtaques ; i++) {
 
 // Se o herói derrotou o monstro, ele ganha 2000 de XP
 if (bossDerrotado) {
-    xpHeroi += 2000;
-    console.log("O Herói " + heroi[0] + " ganhou 2000 de XP!");
+    xpAdquerido = (monstro[1] / 4)
+    xpHeroi += xpAdquerido;
+    console.log("O Herói " + heroi[0] + " ganhou " + xpAdquerido + " de XP!");
 }
 
 // Define o nível do herói com base na quantidade de XP
@@ -61,4 +62,4 @@ if (xpHeroi <= 1000) {
 }
 
 // Mostra o resultado final com nome, nível e XP do herói
-console.log("O Herói do nome " + heroi[0] + " está no nível " + nivelHeroi + " com " + xpHeroi + " de XP.");
+console.log("O Herói " + heroi[0] + " está no nível " + nivelHeroi + " com " + xpHeroi + " de XP.");
