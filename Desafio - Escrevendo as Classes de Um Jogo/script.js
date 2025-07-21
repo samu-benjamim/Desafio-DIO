@@ -37,5 +37,5 @@ ninja.atacar();
 arqueiro.atacar();
 assassino.atacar();
 console.log("================================================================");
-console.log(`O equipe causou ${totalDanoRodada} de dano na rodada!`);
+console.log(`A equipe causou ${totalDanoRodada} de dano na rodada!`);
 console.log("================================================================");
